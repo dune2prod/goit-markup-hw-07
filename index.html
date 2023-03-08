@@ -25,12 +25,13 @@
     <!-- Header -->
     <header class="header">
         <div class="container header-container">
+            <!-- logo -->
+            <a class="logo" href="./index.html">
+                <span class="logo-color-main">web</span>
+                <span class="logo-color-secondary"> studio</span>
+            </a>
             <nav class="header-navigation">
-                <!-- logo -->
-                <a class="logo" href="./index.html">
-                    <span class="logo-color-main">web</span>
-                    <span class="logo-color-secondary"> studio</span>
-                </a>
+
                 <!-- navigation menu -->
                 <ul class="header-nav-list">
                     <li class="header-list decoration-line">
@@ -44,7 +45,6 @@
                     </li>
                 </ul>
             </nav>
-
             <!-- Contacts -->
             <address class="address">
                 <ul class="address-list">
@@ -57,78 +57,150 @@
                     </li>
                 </ul>
             </address>
+            <!-- Mobile menu Icon -->
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="burger">
+                    <use href="./pictures/sprite.svg#icon-mobile-burger-menu1"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu-wrapper container">
+                <nav class="mobile-menu-header-navigation">
+                    <ul class="mobile-menu-header-nav-list">
+                        <li class="mobile-menu-header-list">
+                            <a class="mobile-menu-header-navigation-item" href="">studio</a>
+                        </li>
+                        <li class="mobile-menu-header-list">
+                            <a class="mobile-menu-header-navigation-item" href="./portfolio.html">portfolio</a>
+                        </li>
+                        <li class="mobile-menu-header-list">
+                            <a class="mobile-menu-header-navigation-item" href="">contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="mobile-menu-address">
+                    <ul class="mobile-menu-address-list">
+                        <li class="mobile-menu-address-list-item">
+                            <a class="mobile-menu-tel-item" href="tel:+110001111111">+11 (000) 111-11-11
+                            </a>
+                        </li>
+                        <li class="mobile-menu-address-list-item">
+                            <a class="mobile-menu-email-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+
+                    </ul>
+                </address>
+                <ul class="mobile-menu-socialmedia-list">
+                    <li class="mobile-menu-list-item">
+                        <a class="mobile-menu-list-link" href="">
+                            <svg class="mobile-menu-svgbox">
+                                <use href="./pictures/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-list-item">
+                        <a class="mobile-menu-list-link" href="">
+                            <svg class="mobile-menu-svgbox">
+                                <use href="./pictures/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-list-item">
+                        <a class="mobile-menu-list-link" href="">
+                            <svg class="mobile-menu-svgbox">
+                                <use href="./pictures/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-list-item">
+                        <a class="mobile-menu-list-link" href="">
+                            <svg class="mobile-menu-svgbox">
+                                <use href="./pictures/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="mobile-menu-close-btn" type="button" data-menu-close>
+                    <svg class="mobile-menu-close-icon">
+                        <use href="./pictures/sprite.svg#icon-close-btn""></use>
+                </svg>
+              </button>    
+            </div>
         </div>
     </header>
     <!-- main part -->
     <main>
         <!-- hero!!! section 1-->
 
-        <!-- <section class="hero">
-            <h1 class="hero-header">Effective Solutions for Your Business</h1>
-                       <button data-modal-open class="hero-btn" type="button">Order Service</button>
-        </section> -->
+        <section class=" hero">
+                            <h1 class="hero-header">Effective Solutions for Your Business</h1>
+                            <button data-modal-open class="hero-btn" type="button">Order Service</button>
+                            </section>
 
-        <!-- feature list section 2 -->
-        <!-- <section class="features section container">
-            <ul class="features-list">
-                <li class="features-list-item">
-                    <div class="features-iconbox">
-                        <svg class="features-list-item-svgbox">
-                            <use href="./pictures/sprite.svg#icon-antena"></use>
-                        </svg>
-                    </div>
+                            <!-- feature list section 2 -->
+                            <section class="features section container">
+                                <ul class="features-list">
+                                    <li class="features-list-item">
+                                        <div class="features-iconbox">
+                                            <svg class="features-list-item-svgbox">
+                                                <use href="./pictures/sprite.svg#icon-antena"></use>
+                                            </svg>
+                                        </div>
 
-                    <h2 class="features-list-header">Strategy</h2>
-                    <p class="features-list-text">
-                        Our goal is to identify the business problem to walk away with the
-                        perfect and creative solution.
-                    </p>
-                </li>
-                <li class="features-list-item">
-                    <div class="features-iconbox">
-                        <svg class="features-list-item-svgbox">
-                            <use href="./pictures/sprite.svg#icon-clock"></use>
-                        </svg>
-                    </div>
+                                        <h2 class="features-list-header">Strategy</h2>
+                                        <p class="features-list-text">
+                                            Our goal is to identify the business problem to walk away with the
+                                            perfect and creative solution.
+                                        </p>
+                                    </li>
+                                    <li class="features-list-item">
+                                        <div class="features-iconbox">
+                                            <svg class="features-list-item-svgbox">
+                                                <use href="./pictures/sprite.svg#icon-clock"></use>
+                                            </svg>
+                                        </div>
 
-                    <h2 class="features-list-header">Punctuality</h2>
-                    <p class="features-list-text">
-                        Bring the key message to the brand's audience for the best price
-                        within the shortest possible time.
-                    </p>
-                </li>
-                <li class="features-list-item">
-                    <div class="features-iconbox">
-                        <svg class="features-list-item-svgbox">
-                            <use href="./pictures/sprite.svg#icon-diagram"></use>
-                        </svg>
-                    </div>
+                                        <h2 class="features-list-header">Punctuality</h2>
+                                        <p class="features-list-text">
+                                            Bring the key message to the brand's audience for the best price
+                                            within the shortest possible time.
+                                        </p>
+                                    </li>
+                                    <li class="features-list-item">
+                                        <div class="features-iconbox">
+                                            <svg class="features-list-item-svgbox">
+                                                <use href="./pictures/sprite.svg#icon-diagram"></use>
+                                            </svg>
+                                        </div>
 
-                    <h2 class="features-list-header">Diligence</h2>
-                    <p class="features-list-text">
-                        Research and confirm brands that present the strongest digital
-                        growth opportunities and minimize risk.
-                    </p>
-                </li>
-                <li class="features-list-item">
-                    <div class="features-iconbox">
-                        <svg class="features-list-item-svgbox">
-                            <use href="./pictures/sprite.svg#icon-astronaut"></use>
-                        </svg>
-                    </div>
+                                        <h2 class="features-list-header">Diligence</h2>
+                                        <p class="features-list-text">
+                                            Research and confirm brands that present the strongest digital
+                                            growth opportunities and minimize risk.
+                                        </p>
+                                    </li>
+                                    <li class="features-list-item">
+                                        <div class="features-iconbox">
+                                            <svg class="features-list-item-svgbox">
+                                                <use href="./pictures/sprite.svg#icon-astronaut"></use>
+                                            </svg>
+                                        </div>
 
-                    <h2 class="features-list-header">Technologies</h2>
-                    <p class="features-list-text">
-                        Design practice focused on digital experiences. We bring forth a
-                        deep passion for problem-solving.
-                    </p>
-                </li>
-            </ul>
-        </section> -->
+                                        <h2 class="features-list-header">Technologies</h2>
+                                        <p class="features-list-text">
+                                            Design practice focused on digital experiences. We bring forth a
+                                            deep passion for problem-solving.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
 
-        <!-- "what are we doing" section 3 -->
+                            <!-- "what are we doing" section 3 -->
 
-        <!-- <section class="company-descr container">
+                            <!-- <section class="company-descr container">
             <h2 class="company-descr-header">What are we doing</h2>
             <ul class="company-descr-list">
                 <li class="company-descr-list-item">
@@ -142,9 +214,9 @@
                 </li>
             </ul>
         </section> -->
-        <!-- our team section 4 -->
+                            <!-- our team section 4 -->
 
-        <!-- <section class="our-team section">
+                            <!-- <section class="our-team section">
             <div class="container">
                 <h2 class="our-team-header">Our Team</h2>
                                <ul class="our-team-list">
@@ -292,9 +364,9 @@
             </div>
         </section> -->
 
-        <!-- Section_5 -->
+                            <!-- Section_5 -->
 
-        <!-- <section class="customers section container">
+                            <!-- <section class="customers section container">
             <h2 class="customers-header">customers</h2>
 
             <ul class="customers-list">
@@ -342,10 +414,10 @@
                 </li>
             </ul>
         </section> -->
-    </main>
-    <!-- footer -->
+                            </main>
+                            <!-- footer -->
 
-    <!-- <footer class="footer section">
+                            <!-- <footer class="footer section">
                 <div class="footer-flexbox container">
             <div>
                 <a class="logo" href="./index.html">
@@ -412,64 +484,69 @@
 
 
     </footer> -->
-    <!--===================== backdrop ==========================-->
-    <div data-modal class="backdrop-overlay is-hidden ">
+                            <!--===================== backdrop ==========================-->
+                            <div data-modal class="backdrop-overlay is-hidden ">
 
-        <div class="backdrop-window">
-            <!-- ===================FORM======================== -->
-            <p class="form-descr">Leave your contacts and we will call you back</p>
+                                <div class="backdrop-window">
+                                    <!-- ===================FORM======================== -->
+                                    <p class="form-descr">Leave your contacts and we will call you back</p>
 
-            <form class="form">
+                                    <form class="form">
 
-                <label for="user_name" class="label-style">Name</label>
-                <div class="backdrop-wraper">
-                    <input id="user_name" name="user-name" class="user-name-styles" type="text" required>
-                    <svg class="backdrop-user-icon">
-                        <use href="./pictures/sprite.svg#icon-backdrop_user"></use>
-                    </svg>
-                </div>
-
-
-                <label for="user_phone" class="label-style">Phone</label>
-                <div class="backdrop-wraper">
-                    <input id="user_phone" name="user-phone" class="user-phone-styles" type="tel" required>
-                    <svg class="backdrop-user-icon">
-                        <use href="./pictures/sprite.svg#icon-backdrop_phone"></use>
-                </div>
-
-                <label for="user_email" class="label-style">Email</label>
-                <div class="backdrop-wraper">
-                    <input id="user_email" name="user-email" class="user-email-styles" type="email" required>
-                    <svg class="backdrop-user-icon">
-                        <use href="./pictures/sprite.svg#icon-backdrop_mail"></use>
-                </div>
+                                        <label for="user_name" class="label-style">Name</label>
+                                        <div class="backdrop-wraper">
+                                            <input id="user_name" name="user-name" class="user-name-styles" type="text"
+                                                required>
+                                            <svg class="backdrop-user-icon">
+                                                <use href="./pictures/sprite.svg#icon-backdrop_user"></use>
+                                            </svg>
+                                        </div>
 
 
-                <label for="user_comment" class="label-style">Comment</label>
-                <textarea id="user_comment" name="user-comment" class="user-comment-styles" type="text"
-                    placeholder="Text input"></textarea>
+                                        <label for="user_phone" class="label-style">Phone</label>
+                                        <div class="backdrop-wraper">
+                                            <input id="user_phone" name="user-phone" class="user-phone-styles"
+                                                type="tel" required>
+                                            <svg class="backdrop-user-icon">
+                                                <use href="./pictures/sprite.svg#icon-backdrop_phone"></use>
+                                        </div>
 
-                <!--  -->
-                <input id="agr_checkbox" name="agrement-checkbox" type="checkbox" required
-                    class="checkbox-input visually-hidden">
-                <label for="agr_checkbox" class="label-style checkbox-borders">I accept the terms and conditions of the
-                    &nbsp;
-                    <a href="#" class="policy-design">Privacy Policy</a>
-
-                </label>
-
-                <button type="submit" class="send-btn">
-                    <p class="send-btn-txt">Send</p>
-
-                </button>
+                                        <label for="user_email" class="label-style">Email</label>
+                                        <div class="backdrop-wraper">
+                                            <input id="user_email" name="user-email" class="user-email-styles"
+                                                type="email" required>
+                                            <svg class="backdrop-user-icon">
+                                                <use href="./pictures/sprite.svg#icon-backdrop_mail"></use>
+                                        </div>
 
 
-            </form>
+                                        <label for="user_comment" class="label-style">Comment</label>
+                                        <textarea id="user_comment" name="user-comment" class="user-comment-styles"
+                                            type="text" placeholder="Text input"></textarea>
+
+                                        <!--  -->
+                                        <input id="agr_checkbox" name="agrement-checkbox" type="checkbox" required
+                                            class="checkbox-input visually-hidden">
+                                        <label for="agr_checkbox" class="label-style checkbox-borders">I accept the
+                                            terms
+                                            and conditions of the
+                                            &nbsp;
+                                            <a href="#" class="policy-design">Privacy Policy</a>
+
+                                        </label>
+
+                                        <button type="submit" class="send-btn">
+                                            <p class="send-btn-txt">Send</p>
+
+                                        </button>
 
 
-            <button data-modal-close class="backdrop-close-btn" type="button">
-                <svg class="close-icon">
-                    <use href="./pictures/sprite.svg#icon-close-btn""></use>
+                                    </form>
+
+
+                                    <button data-modal-close class="backdrop-close-btn" type="button">
+                                        <svg class="close-icon">
+                                            <use href="./pictures/sprite.svg#icon-close-btn""></use>
                 </svg>
 
             </button>
@@ -478,8 +555,9 @@
         </div>
 
     </div>
-   <script src=" ./js/modal.js">
+<script src=" ./js/modal.js">
 </script>
+                                                <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
