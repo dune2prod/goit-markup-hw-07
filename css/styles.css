@@ -92,6 +92,18 @@ a {
   padding-top: 188px;
   padding-bottom: 188px;
 }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../pictures/mobile_hero_background@2x.jpg);
+  }
+}
 .hero-header {
   font-style: normal;
   font-weight: 700;
@@ -408,8 +420,7 @@ a {
   flex-direction: column;
   gap: 40px;
 }
-.mobile-menu-address-list-item {
-}
+
 .mobile-menu-email-item {
   font-style: normal;
   font-weight: 500;
@@ -433,8 +444,7 @@ a {
   flex-wrap: wrap;
   gap: 56px;
 }
-.mobile-menu-list-item {
-}
+
 .mobile-menu-list-link {
   display: flex;
   width: 40px;
@@ -512,6 +522,18 @@ a {
       ),
       url(../pictures/tablet_hero_background.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../pictures/tablet_hero_background@2x.jpg);
+    }
+  }
   .hero-header {
     font-size: 56px;
   }
@@ -555,12 +577,11 @@ a {
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 0;
-    padding-left: 140px;
+    padding-left: 92px;
     column-gap: 24px;
     row-gap: 72px;
   }
-  .footer-form {
-  }
+
   .footer-form-wrapper {
     flex-direction: row;
     gap: 24px;
@@ -597,6 +618,26 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../pictures/hero_background.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../pictures/hero_background@2x.jpg);
+    }
+  }
+
   .features-list {
     flex-wrap: nowrap;
   }
@@ -630,6 +671,13 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-top: 8px;
+  }
+  .footer-flexbox {
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
+  .footer-socialmedia-box {
+    margin-left: 120px;
   }
 }
 
