@@ -536,6 +536,9 @@ a {
   }
   .hero-header {
     font-size: 56px;
+    padding: 0;
+    width: 496px;
+    margin: auto;
   }
   /* ++++++++++++++++features++++++++++++++ */
   .features-list {
